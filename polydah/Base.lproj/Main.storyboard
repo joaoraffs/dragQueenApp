@@ -83,7 +83,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="277" id="wJY-ZH-CIq" userLabel="wigs etc cell" customClass="StoreTableViewCell" customModule="polydah" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoreTableViewCell" rowHeight="277" id="wJY-ZH-CIq" userLabel="wigs etc cell" customClass="StoreTableViewCell" customModule="polydah" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="362" height="277"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wJY-ZH-CIq" id="7mr-FE-NMx">
@@ -102,7 +102,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <prototypes>
-                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="165" id="oyy-jJ-9CL" customClass="ItemTableViewCell" customModule="polydah" customModuleProvider="target">
+                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemTableViewCell" rowHeight="165" id="oyy-jJ-9CL" customClass="ItemTableViewCell" customModule="polydah" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="28" width="328" height="165"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oyy-jJ-9CL" id="JrF-tZ-7ia">
@@ -143,6 +143,7 @@
                                         <color key="backgroundColor" red="1" green="0.30196078430000001" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="tableView" destination="jRc-fL-5PC" id="ITD-Y3-phr"/>
+                                            <outlet property="typeOfItemLabel" destination="7Pr-T5-Zdv" id="96f-zg-PmX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

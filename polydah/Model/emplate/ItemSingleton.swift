@@ -7,15 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
 class ItemSingleton{
     
-    private init(){}
+    private init(){
+        self.itensInStore.append(Item(image: UIImage(), name: "ex", description: "aa", price: 30))
+    }
     
     public static var instance = ItemSingleton()
     
-    public var itensInStore: [Item]
+    public var itensInStore: [Item] = [Item(image: UIImage(), name: "ex", description: "aa", price: 30)]
     
-    public var boughtItens: [Item]
+    public var boughtItens: [Item] =  []
     
 }

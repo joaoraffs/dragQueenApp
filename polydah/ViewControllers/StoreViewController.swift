@@ -11,11 +11,19 @@ import UIKit
 class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StoreTableViewCell", for: indexPath) as! StoreTableViewCell
+        
+        if indexPath.row == 0{
+            
+            cell.typeOfItemLabel.text = "PERUCAHS"
+            cell.tableView.reloadData()
+        }
+        
+        return cell
     }
     
 

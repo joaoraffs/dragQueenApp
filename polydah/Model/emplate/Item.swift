@@ -11,14 +11,16 @@ import UIKit
 
 public class Item{
     
-    internal init(image: UIImage, name: String, description: String) {
+    public init(image: UIImage, name: String, description: String, price: Int) {
+        
         self.image = image
         self.name = name
         self.description = description
+        self.price = price
     }
     
     var image : UIImage
     var name: String
     var description: String
-    
+    var price: Int
 }
