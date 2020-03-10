@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemTableViewCell: UITableViewCell {
+class ItemTableViewCell: UITableViewCell{
 
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var itemImageView: UIImageView!
@@ -17,6 +17,13 @@ class ItemTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        print("ENTROU NO AWAKE")
+    }
+    
+    public func setCellByItem(_ item: Item){
+        self.priceLabel.text = String(item.price)
+        self.itemImageView.image = item.image
+        self.descriptionLabel.text = item.description
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

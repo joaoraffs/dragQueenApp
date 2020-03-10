@@ -8,25 +8,27 @@
 
 import UIKit
 
-class StoreTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDataSource {
+class StoreTableViewCell: UITableViewCell {
     
     var items : [Item] = []
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return items.count
-
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as! ItemTableViewCell
-        
-        cell.priceLabel.text = items[indexPath.row].price as? String
-        
-        return cell
-        
-    }
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        let count = items.count
+//        print("entrou no numberOfRows e o count é ")
+//        print(count)
+//        return items.count
+//
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+////
+////        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as! ItemTableViewCell
+////
+////        cell.priceLabel.text = String(items[indexPath.row].price)
+////
+////        return cell
+//
+//    }
     
 
     @IBOutlet weak var tableView: UITableView!
@@ -38,8 +40,10 @@ class StoreTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDataS
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.items = Model.instance.itemModel.itensInStore
-        self.tableView.reloadData()
+//        print("entrou no awake from inib")
+//        self.items = Model.instance.itemModel.itensInStore
+//        
+//        self.tableView.reloadData()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -49,3 +53,14 @@ class StoreTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDataS
     }
 
 }
+extension StoreTableViewCell{
+    
+    func setTableViewDataSourceDelegate <D:UITableViewDelegate & UITableViewDataSource>(_ dataSourceDelegate: D, forRow row: Int){
+        tableView.delegate = dataSourceDelegate
+        tableView.dataSource = dataSourceDelegate
+        
+        tableView.reloadData()
+        
+    }
+}
+
