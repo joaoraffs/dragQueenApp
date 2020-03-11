@@ -19,6 +19,8 @@
 		A51D3FEA2412736900E3EC81 /* ItemSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D3FE92412736900E3EC81 /* ItemSingleton.swift */; };
 		A51D3FEC2412752D00E3EC81 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D3FEB2412752D00E3EC81 /* Item.swift */; };
 		A51D3FEE2412781A00E3EC81 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D3FED2412781A00E3EC81 /* Model.swift */; };
+		A57DEF74241958E800FDE24D /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DEF73241958E800FDE24D /* Currency.swift */; };
+		A57DEF7724195B8A00FDE24D /* CurrencyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DEF7624195B8A00FDE24D /* CurrencyEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		A51D3FE92412736900E3EC81 /* ItemSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemSingleton.swift; path = emplate/ItemSingleton.swift; sourceTree = "<group>"; };
 		A51D3FEB2412752D00E3EC81 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = emplate/Item.swift; sourceTree = "<group>"; };
 		A51D3FED2412781A00E3EC81 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = emplate/Model.swift; sourceTree = "<group>"; };
+		A57DEF73241958E800FDE24D /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Currency.swift; path = emplate/Currency.swift; sourceTree = "<group>"; };
+		A57DEF7624195B8A00FDE24D /* CurrencyEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrencyEngine.swift; path = emplate/CurrencyEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		A51D3FCB24117D1500E3EC81 /* polydah */ = {
 			isa = PBXGroup;
 			children = (
+				A57DEF7524195B5500FDE24D /* Engine */,
 				A51D3FE8241272B500E3EC81 /* Model */,
 				A51D3FE324126DB200E3EC81 /* TableViewCells */,
 				A51D3FCC24117D1500E3EC81 /* AppDelegate.swift */,
@@ -102,11 +107,20 @@
 		A51D3FE8241272B500E3EC81 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A57DEF73241958E800FDE24D /* Currency.swift */,
 				A51D3FED2412781A00E3EC81 /* Model.swift */,
 				A51D3FEB2412752D00E3EC81 /* Item.swift */,
 				A51D3FE92412736900E3EC81 /* ItemSingleton.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A57DEF7524195B5500FDE24D /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				A57DEF7624195B8A00FDE24D /* CurrencyEngine.swift */,
+			);
+			path = Engine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +200,9 @@
 				A51D3FCD24117D1500E3EC81 /* AppDelegate.swift in Sources */,
 				A51D3FCF24117D1500E3EC81 /* SceneDelegate.swift in Sources */,
 				A51D3FEC2412752D00E3EC81 /* Item.swift in Sources */,
+				A57DEF74241958E800FDE24D /* Currency.swift in Sources */,
 				A51D3FE724126F0000E3EC81 /* ItemTableViewCell.swift in Sources */,
+				A57DEF7724195B8A00FDE24D /* CurrencyEngine.swift in Sources */,
 				A51D3FEA2412736900E3EC81 /* ItemSingleton.swift in Sources */,
 				A51D3FE524126E3A00E3EC81 /* StoreTableViewCell.swift in Sources */,
 			);
