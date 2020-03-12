@@ -12,8 +12,10 @@ import UIKit
 class ItemSingleton{
     
     private init(){
+//        self.itensInStore.append
         
         self.fetchItems()
+        
     }
     
     public static var instance = ItemSingleton()
@@ -21,7 +23,7 @@ class ItemSingleton{
     public func fetchItems(){
         var repeater = 0
         while true{
-            print("entrou no primeeiro rpeat")
+            print("entrou no primeeiro rpeat \(repeater)")
             if let image = UIImage.init(named: "dress\(repeater)"){
                 print("entrou no if let")
                 let item = Item(image: image, name: "dress\(repeater)", description: "", price: 30)
@@ -30,24 +32,38 @@ class ItemSingleton{
                 break
             }
             repeater += 1
-            
         }
         repeater = 0
         while true{
             print("entrou no segundo repeat")
             if let image = UIImage.init(named: "hair\(repeater)"){
+                print("entrou no if let do hair")
                 let item = Item(image: image, name: "hair\(repeater)", description: "", price: 30)
                 self.hairsInStore.append(item)
             }else{
                 break
             }
             repeater += 1
-            
         }
+        repeater = 0
+        while true{
+            print("entrou no 3o repeat")
+            if let image = UIImage.init(named: "shoe\(repeater)"){
+                print("entrou no if let do hair")
+                let item = Item(image: image, name: "shoe\(repeater)", description: "", price: 30)
+                self.hairsInStore.append(item)
+            }else{
+                break
+            }
+            repeater += 1
+        }
+        itensInStore[0] = hairsInStore
+        itensInStore[1] = dressesInStore
+        print(itensInStore.count)
         
     }
     
-    public var itensInStore: [Item] = []
+    public var itensInStore: [Int: [Item]] = [:]
     
     public var hairsInStore: [Item] = []
     public var dressesInStore: [Item] = []

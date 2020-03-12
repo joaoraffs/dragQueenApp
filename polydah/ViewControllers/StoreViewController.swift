@@ -13,7 +13,9 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var alredyLoadedSectionOne = false
     var alredyLoadedSectionTwo = false
     
-    let itensInStore = Model.instance.itemModel.itensInStore
+    var itensInStore: [Int:[Item]] = [ : ]
+    
+    var itensInShop = Model.instance.itemModel.itensInStore
     
 //    func numberOfSections(in tableView: UITableView) -> Int {
 //     return 3
@@ -23,10 +25,8 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if tableView.tag == 100{
             return 3
         }
-        if section == 0{
-            return Model.instance.itemModel.hairsInStore.count
-        }
-        return Model.instance.itemModel.dressesInStore.count
+        let arrayOfItens = itensInShop[section]
+        return arrayOfItens!.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -34,7 +34,7 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if tableView.tag == 100{
             return 1
         }
-        return 3
+        return itensInShop.count
 //        }
 //        return 1
     }
@@ -64,30 +64,20 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
             return cell
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as! ItemTableViewCell
-        if !(alredyLoadedSectionTwo && alredyLoadedSectionOne){
-            if indexPath.section == 0 && !alredyLoadedSectionOne{
-                let item = Model.instance.itemModel.hairsInStore[indexPath.row]
-                cell.setCellByItem(item)
-                print("section 0 and row \(indexPath.row)")
-                return cell
-                
-            }else if indexPath.section == 1 && !alredyLoadedSectionTwo{
-                alredyLoadedSectionOne = true
-
-                let item = Model.instance.itemModel.dressesInStore[indexPath.row]
-                cell.setCellByItem(item)
-                print("anothr one")
-                return cell
-            }else{
-                alredyLoadedSectionTwo = true
-            }
+      
+        if let itensArray = itensInShop[indexPath.section]{
+        
+            cell.setCellByItem(itensArray[indexPath.row])
+            return cell
         }
-//
-//        let item =
-//        cell.setCellByItem(item)
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+
     
 
     @IBOutlet weak var allTypeOfItemsTableView: UITableView!
