@@ -17,7 +17,7 @@ class CurrencyEngine{
     
     public func start(){
       let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
-        self.currency.increasesMoney()
+        self.currency.increasesMoneyBy(self.currency.moneyPerSecond)
         
         print("money increased")
         

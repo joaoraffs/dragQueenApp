@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let currency = Currency()
         
         currency.avaiableMoney = 0
-        currency.moneyPerSecond = 0
+        currency.moneyPerSecond = 1 /* é nessa hora que é definido  */
         
         Model.instance.currency = currency
         

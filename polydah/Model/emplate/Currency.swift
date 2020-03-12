@@ -13,12 +13,12 @@ public class Currency{
     public init(){}
     
     public var avaiableMoney = 0
-    public var moneyPerSecond =  0
-    
+    public var moneyPerSecond =  1
+    public var moneyByTap = 1
     //public var pinkMoney = 0
     
-    public func increasesMoney(){
-        self.avaiableMoney +=  1
+    public func increasesMoneyBy(_ amount: Int){
+        self.avaiableMoney += amount
     }
     
 }

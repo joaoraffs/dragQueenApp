@@ -18,11 +18,14 @@ class ViewController: UIViewController {
         
                 
     }
+    
+    @IBOutlet weak var hairImageView: UIImageView!
     var currency = Model.instance.currency
     @IBOutlet weak var currencyLabel: UILabel!
+    @IBOutlet weak var dragImageView: UIImageView!
     
     @IBAction func tapGesture(_ sender: Any) {
-        self.currency.increasesMoney()
+        self.currency.increasesMoneyBy(currency.moneyByTap)
         self.reloadLabels()
     }
     public func repeater(){
