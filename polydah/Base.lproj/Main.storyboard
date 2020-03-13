@@ -27,7 +27,7 @@
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8QJ-CA-j7g">
-                                        <rect key="frame" x="44" y="35" width="313" height="483"/>
+                                        <rect key="frame" x="48.5" y="35" width="313" height="483"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="483" id="F1J-MM-GVk"/>
@@ -35,11 +35,19 @@
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxM-0i-cHn" userLabel="DressImageView">
-                                        <rect key="frame" x="45" y="35" width="313" height="483"/>
+                                        <rect key="frame" x="43.5" y="35" width="313" height="483"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="483" id="FA3-2A-Rs5"/>
                                             <constraint firstAttribute="width" constant="313" id="Zp8-i3-zdh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoe1" translatesAutoresizingMaskIntoConstraints="NO" id="oHm-TT-4yW" userLabel="shoeImageeView">
+                                        <rect key="frame" x="50" y="35" width="307" height="483"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="307" id="exa-dY-ySu"/>
+                                            <constraint firstAttribute="height" constant="483" id="pHH-Ie-hHm"/>
+                                            <constraint firstAttribute="width" constant="307" id="rYD-T6-4Li"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -50,9 +58,12 @@
                                     <constraint firstItem="8QJ-CA-j7g" firstAttribute="width" secondItem="8sK-4v-chq" secondAttribute="width" id="0ia-O1-Zg2"/>
                                     <constraint firstItem="8sK-4v-chq" firstAttribute="leading" secondItem="dX0-R8-umw" secondAttribute="leading" constant="50" id="47q-rg-xZQ"/>
                                     <constraint firstItem="hxM-0i-cHn" firstAttribute="centerX" secondItem="8QJ-CA-j7g" secondAttribute="centerX" constant="-5" id="A6d-AO-uOp"/>
+                                    <constraint firstItem="oHm-TT-4yW" firstAttribute="leading" secondItem="dX0-R8-umw" secondAttribute="leading" constant="50" id="AfR-Sh-zwo"/>
                                     <constraint firstItem="hxM-0i-cHn" firstAttribute="height" secondItem="8sK-4v-chq" secondAttribute="height" id="B4S-fC-BzL"/>
                                     <constraint firstItem="8sK-4v-chq" firstAttribute="top" secondItem="dX0-R8-umw" secondAttribute="top" constant="35" id="DWb-ju-5UN"/>
                                     <constraint firstItem="hxM-0i-cHn" firstAttribute="centerY" secondItem="8QJ-CA-j7g" secondAttribute="centerY" id="HKY-Q7-B3G"/>
+                                    <constraint firstAttribute="trailing" secondItem="oHm-TT-4yW" secondAttribute="trailing" constant="57" id="Igi-hL-2yO"/>
+                                    <constraint firstItem="oHm-TT-4yW" firstAttribute="top" secondItem="dX0-R8-umw" secondAttribute="top" constant="35" id="Q1F-Q8-jUH"/>
                                     <constraint firstAttribute="width" constant="414" id="S4a-X1-LuH"/>
                                     <constraint firstItem="8QJ-CA-j7g" firstAttribute="top" secondItem="8sK-4v-chq" secondAttribute="top" id="Ucc-BZ-59j"/>
                                     <constraint firstItem="8QJ-CA-j7g" firstAttribute="height" secondItem="8sK-4v-chq" secondAttribute="height" id="c09-ZC-LT2"/>
@@ -139,7 +150,10 @@
                     <connections>
                         <outlet property="currencyLabel" destination="gPI-Kr-yVP" id="toA-ZA-eig"/>
                         <outlet property="dragImageView" destination="8sK-4v-chq" id="Hxw-0g-Jby"/>
+                        <outlet property="dressImageView" destination="hxM-0i-cHn" id="H9V-b4-vCL"/>
                         <outlet property="hairImageView" destination="8QJ-CA-j7g" id="EOU-6w-ytN"/>
+                        <outlet property="hairImageViw" destination="8QJ-CA-j7g" id="28R-nz-sfm"/>
+                        <outlet property="shoeImageView" destination="oHm-TT-4yW" id="vCI-AY-Ccq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -344,5 +358,6 @@
         <image name="038-diamond" width="512" height="512"/>
         <image name="Basi Polly" width="615" height="1478"/>
         <image name="card" width="512" height="362"/>
+        <image name="shoe1" width="909" height="1478"/>
     </resources>
 </document>

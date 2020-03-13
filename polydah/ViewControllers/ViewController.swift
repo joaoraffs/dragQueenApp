@@ -24,6 +24,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var currencyLabel: UILabel!
     @IBOutlet weak var dragImageView: UIImageView!
     
+    @IBOutlet weak var dressImageView: UIImageView!
+    @IBOutlet weak var hairImageViw: UIImageView!
+    @IBOutlet weak var shoeImageView: UIImageView!
     @IBAction func tapGesture(_ sender: Any) {
         self.currency.increasesMoneyBy(currency.moneyByTap)
         self.reloadLabels()
@@ -36,6 +39,12 @@ class ViewController: UIViewController {
     }
     private func reloadLabels(){
         self.currencyLabel.text = String(Model.instance.currency.avaiableMoney)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        let drag = Model.instance.drag
+        self.hairImageView.image = drag.hair.image
+        self.dressImageView.image = drag.dress.image
+        self.shoeImageView.image = drag.shoes.image
     }
 }
 

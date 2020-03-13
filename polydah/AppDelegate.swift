@@ -21,6 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         currency.avaiableMoney = 0
         currency.moneyPerSecond = 1 /* é nessa hora que é definido  */
         
+        UserDefaults.standard.set(Model.instance.drag.hairIndex, forKey: "dragHair")
+        UserDefaults.standard.set(Model.instance.drag.shoesIndex, forKey: "shoesIndex")
+        UserDefaults.standard.set(Model.instance.drag.dressIndex, forKey: "dressIndex")
+
+        
         Model.instance.currency = currency
         
         CurrencyEngine().start()

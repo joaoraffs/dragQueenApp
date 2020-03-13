@@ -16,4 +16,6 @@ class Model{
     public var itemModel = ItemSingleton.instance
     
     public var currency = Currency()
+    
+    public var drag = Drag()
 }

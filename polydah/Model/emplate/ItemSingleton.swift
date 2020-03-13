@@ -51,14 +51,20 @@ class ItemSingleton{
             if let image = UIImage.init(named: "shoe\(repeater)"){
                 print("entrou no if let do hair")
                 let item = Item(image: image, name: "shoe\(repeater)", description: "", price: 30)
-                self.hairsInStore.append(item)
+                self.shoesInStore.append(item)
             }else{
                 break
             }
             repeater += 1
         }
+//        }
+//        repeater = 0
+//        while true{
+//            if let image = UIImage(named:")
+//        }
         itensInStore[0] = hairsInStore
         itensInStore[1] = dressesInStore
+        itensInStore[2] = shoesInStore
         print(itensInStore.count)
         
     }
@@ -67,6 +73,7 @@ class ItemSingleton{
     
     public var hairsInStore: [Item] = []
     public var dressesInStore: [Item] = []
+    public var shoesInStore: [Item] = []
 
     
     public var boughtItens: [Item] =  []

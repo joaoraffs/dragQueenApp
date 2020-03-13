@@ -75,6 +75,29 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = itensInShop[indexPath.section]![indexPath.row]
+        let currency = Model.instance.currency
+        currency.moneyPerSecond += indexPath.row
+        currency.moneyByTap += indexPath.section
+        
+        let drag = Model.instance.drag
+        let section = indexPath.section
+        
+        if section == 0{
+            drag.hairIndex = indexPath.row
+            drag.hair = item
+        }
+        if section == 1{
+            drag.dressIndex = indexPath.row
+            drag.dress = item
+        }
+        if section == 2{
+            drag.shoesIndex = indexPath.row
+            drag.shoes = item
+        }
+        drag.saveInUD()
+        drag.fetchFromUD()
+        
         
     }
 
