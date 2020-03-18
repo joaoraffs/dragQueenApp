@@ -14,6 +14,7 @@ class ItemTableViewCell: UITableViewCell{
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -31,5 +32,16 @@ class ItemTableViewCell: UITableViewCell{
 
         // Configure the view for the selected state
     }
+//    
+//    override func prepareForReuse() {
+//        // invoke superclass implementation
+//        super.prepareForReuse()
+//        
+//        // reset (hide) the checkmark label
+//        self.priceLabel.isHidden = true
+//        self.itemImageView.isHidden = true
+//        self.descriptionLabel.isHidden = true
+//
+//    }
 
 }

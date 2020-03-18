@@ -34,6 +34,7 @@ class ViewController: UIViewController {
     public func repeater(){
         let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             self.reloadLabels()
+            self.reloadEverything()
           print("money increased")
         }
     }
@@ -41,6 +42,10 @@ class ViewController: UIViewController {
         self.currencyLabel.text = String(Model.instance.currency.avaiableMoney)
     }
     override func viewWillAppear(_ animated: Bool) {
+        reloadEverything()
+    }
+    
+    func reloadEverything(){
         let drag = Model.instance.drag
         self.hairImageView.image = drag.hair.image
         self.dressImageView.image = drag.dress.image
