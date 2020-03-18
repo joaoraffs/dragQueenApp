@@ -66,7 +66,6 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as! ItemTableViewCell
       
         if let itensArray = itensInShop[indexPath.section]{
-        
             cell.setCellByItem(itensArray[indexPath.row])
             return cell
         }
