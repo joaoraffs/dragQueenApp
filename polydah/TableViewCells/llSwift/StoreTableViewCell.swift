@@ -33,6 +33,8 @@ class StoreTableViewCell: UITableViewCell {
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var shoeTableView: UITableView!
+    @IBOutlet weak var dressTableView: UITableView!
     @IBOutlet weak var typeOfItemLabel: UILabel!
     
     
@@ -56,11 +58,20 @@ class StoreTableViewCell: UITableViewCell {
 extension StoreTableViewCell{
     
     func setTableViewDataSourceDelegate <D:UITableViewDelegate & UITableViewDataSource>(_ dataSourceDelegate: D, forRow row: Int){
-        tableView.delegate = dataSourceDelegate
-        tableView.dataSource = dataSourceDelegate
-        
-        tableView.reloadData()
-        
+        if row == 0{
+            tableView.delegate = dataSourceDelegate
+            tableView.dataSource = dataSourceDelegate
+            tableView.reloadData()
+            
+        }else if row == 1{
+            dressTableView.delegate = dataSourceDelegate
+            dressTableView.dataSource = dataSourceDelegate
+            dressTableView.reloadData()
+        }else if row == 2{
+            shoeTableView.delegate = dataSourceDelegate
+            shoeTableView.dataSource = dataSourceDelegate
+            shoeTableView.reloadData()
+        }
     }
 }
 

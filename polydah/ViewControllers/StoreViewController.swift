@@ -25,6 +25,15 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if tableView.tag == 100{
             return 3
         }
+        if tableView.tag == 0{
+            return itensInShop[0]!.count
+        }
+        if tableView.tag == 1{
+            return itensInShop[1]!.count
+        }
+        if tableView.tag == 2{
+            return itensInShop[2]!.count
+        }
         let arrayOfItens = itensInShop[section]
         return arrayOfItens!.count
     }
@@ -65,7 +74,7 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as! ItemTableViewCell
       
-        if let itensArray = itensInShop[indexPath.section]{
+        if let itensArray = itensInShop[tableView.tag]{
             cell.setCellByItem(itensArray[indexPath.row])
             return cell
         }
