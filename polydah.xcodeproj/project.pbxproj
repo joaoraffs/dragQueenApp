@@ -19,6 +19,11 @@
 		A51D3FEA2412736900E3EC81 /* ItemSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D3FE92412736900E3EC81 /* ItemSingleton.swift */; };
 		A51D3FEC2412752D00E3EC81 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D3FEB2412752D00E3EC81 /* Item.swift */; };
 		A51D3FEE2412781A00E3EC81 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D3FED2412781A00E3EC81 /* Model.swift */; };
+		A55B3B2224293E1A0011AA6D /* OnlyLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B3B2124293E1A0011AA6D /* OnlyLabelTableViewCell.swift */; };
+		A56BB5912423B2F3001F21E2 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BB5902423B2F3001F21E2 /* ShopViewController.swift */; };
+		A56BB5932423B622001F21E2 /* ShopCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BB5922423B622001F21E2 /* ShopCollectionViewController.swift */; };
+		A56BB5952423B848001F21E2 /* ShopLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BB5942423B848001F21E2 /* ShopLabelCollectionViewCell.swift */; };
+		A56BB5972423BCD8001F21E2 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BB5962423BCD8001F21E2 /* ItemCollectionViewCell.swift */; };
 		A57DEF74241958E800FDE24D /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DEF73241958E800FDE24D /* Currency.swift */; };
 		A57DEF7724195B8A00FDE24D /* CurrencyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DEF7624195B8A00FDE24D /* CurrencyEngine.swift */; };
 		A57DEF79241BD29E00FDE24D /* Drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57DEF78241BD29E00FDE24D /* Drag.swift */; };
@@ -39,6 +44,11 @@
 		A51D3FE92412736900E3EC81 /* ItemSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemSingleton.swift; path = emplate/ItemSingleton.swift; sourceTree = "<group>"; };
 		A51D3FEB2412752D00E3EC81 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = emplate/Item.swift; sourceTree = "<group>"; };
 		A51D3FED2412781A00E3EC81 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = emplate/Model.swift; sourceTree = "<group>"; };
+		A55B3B2124293E1A0011AA6D /* OnlyLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlyLabelTableViewCell.swift; path = polydah/ViewControllers/llSwift/OnlyLabelTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A56BB5902423B2F3001F21E2 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShopViewController.swift; path = erSwift/ShopViewController.swift; sourceTree = "<group>"; };
+		A56BB5922423B622001F21E2 /* ShopCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShopCollectionViewController.swift; path = erSwift/ShopCollectionViewController.swift; sourceTree = "<group>"; };
+		A56BB5942423B848001F21E2 /* ShopLabelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShopLabelCollectionViewCell.swift; path = llSwift/ShopLabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		A56BB5962423BCD8001F21E2 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCollectionViewCell.swift; path = llSwift/ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		A57DEF73241958E800FDE24D /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Currency.swift; path = emplate/Currency.swift; sourceTree = "<group>"; };
 		A57DEF7624195B8A00FDE24D /* CurrencyEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrencyEngine.swift; path = emplate/CurrencyEngine.swift; sourceTree = "<group>"; };
 		A57DEF78241BD29E00FDE24D /* Drag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Drag.swift; path = emplate/Drag.swift; sourceTree = "<group>"; };
@@ -91,6 +101,8 @@
 		A51D3FE2241189B100E3EC81 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A56BB5922423B622001F21E2 /* ShopCollectionViewController.swift */,
+				A56BB5902423B2F3001F21E2 /* ShopViewController.swift */,
 				A51D3FD024117D1500E3EC81 /* ViewController.swift */,
 				A51D3FE0241189A600E3EC81 /* StoreViewController.swift */,
 			);
@@ -100,8 +112,11 @@
 		A51D3FE324126DB200E3EC81 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				A56BB5962423BCD8001F21E2 /* ItemCollectionViewCell.swift */,
+				A56BB5942423B848001F21E2 /* ShopLabelCollectionViewCell.swift */,
 				A51D3FE624126F0000E3EC81 /* ItemTableViewCell.swift */,
 				A51D3FE424126E3A00E3EC81 /* StoreTableViewCell.swift */,
+				A55B3B2124293E1A0011AA6D /* OnlyLabelTableViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -201,12 +216,17 @@
 				A51D3FE1241189A600E3EC81 /* StoreViewController.swift in Sources */,
 				A51D3FD124117D1500E3EC81 /* ViewController.swift in Sources */,
 				A57DEF79241BD29E00FDE24D /* Drag.swift in Sources */,
+				A56BB5912423B2F3001F21E2 /* ShopViewController.swift in Sources */,
+				A55B3B2224293E1A0011AA6D /* OnlyLabelTableViewCell.swift in Sources */,
 				A51D3FCD24117D1500E3EC81 /* AppDelegate.swift in Sources */,
+				A56BB5932423B622001F21E2 /* ShopCollectionViewController.swift in Sources */,
 				A51D3FCF24117D1500E3EC81 /* SceneDelegate.swift in Sources */,
 				A51D3FEC2412752D00E3EC81 /* Item.swift in Sources */,
+				A56BB5952423B848001F21E2 /* ShopLabelCollectionViewCell.swift in Sources */,
 				A57DEF74241958E800FDE24D /* Currency.swift in Sources */,
 				A51D3FE724126F0000E3EC81 /* ItemTableViewCell.swift in Sources */,
 				A57DEF7724195B8A00FDE24D /* CurrencyEngine.swift in Sources */,
+				A56BB5972423BCD8001F21E2 /* ItemCollectionViewCell.swift in Sources */,
 				A51D3FEA2412736900E3EC81 /* ItemSingleton.swift in Sources */,
 				A51D3FE524126E3A00E3EC81 /* StoreTableViewCell.swift in Sources */,
 			);

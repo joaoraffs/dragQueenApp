@@ -22,17 +22,15 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
 //    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if tableView.tag == 100{
-            return 3
+
+        if section == 0{
+            return itensInShop[0]!.count + 1
         }
-        if tableView.tag == 0{
-            return itensInShop[0]!.count
+        if section == 1{
+            return itensInShop[1]!.count + 1
         }
-        if tableView.tag == 1{
-            return itensInShop[1]!.count
-        }
-        if tableView.tag == 2{
-            return itensInShop[2]!.count
+        if section == 2{
+            return itensInShop[2]!.count + 1
         }
         let arrayOfItens = itensInShop[section]
         return arrayOfItens!.count
@@ -40,42 +38,37 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func numberOfSections(in tableView: UITableView) -> Int {
 //        if tableView.tag != 100{
-        if tableView.tag == 100{
-            return 1
-        }
-        return itensInShop.count
-//        }
-//        return 1
+        return 3
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if tableView.tag == 100{
-            return 277
+        if indexPath.row == 0{
+            return 63
         }else{
             return 180
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if tableView.tag == 100{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "StoreTableViewCell", for: indexPath) as! StoreTableViewCell
-            
-            if indexPath.row == 0{
+        if indexPath.row == 0{
+           let cell = tableView.dequeueReusableCell(withIdentifier: "OnlyLabelTableViewCell", for: indexPath) as! OnlyLabelTableViewCell
+        
+            if indexPath.section == 0{
+        
+                cell.typeLabel.text = "PERUCAHS"
                 
-                cell.typeOfItemLabel.text = "PERUCAHS"
-                cell.tableView.reloadData()
-                
-            }else if indexPath.row == 1{
-                cell.typeOfItemLabel.text = "ROPAHS"
+        
+            }else if indexPath.section == 1{
+                cell.typeLabel.text = "ROPAHS"
             }else {
-                cell.typeOfItemLabel.text = "SAPATÃO"
+                cell.typeLabel.text = "SAPATÃO"
             }
             return cell
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as! ItemTableViewCell
       
-        if let itensArray = itensInShop[tableView.tag]{
-            cell.setCellByItem(itensArray[indexPath.row])
+        if let itensArray = itensInShop[indexPath.section]{
+            cell.setCellByItem(itensArray[indexPath.row - 1])
             return cell
         }
         
@@ -83,24 +76,24 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item = itensInShop[indexPath.section]![indexPath.row]
+        let item = itensInShop[indexPath.section]![indexPath.row-1]
         let currency = Model.instance.currency
-        currency.moneyPerSecond += indexPath.row
+        currency.moneyPerSecond += indexPath.row-1
         currency.moneyByTap += indexPath.section
         
         let drag = Model.instance.drag
         let section = indexPath.section
         
         if section == 0{
-            drag.hairIndex = indexPath.row
+            drag.hairIndex = indexPath.row-1
             drag.hair = item
         }
         if section == 1{
-            drag.dressIndex = indexPath.row
+            drag.dressIndex = indexPath.row-1
             drag.dress = item
         }
         if section == 2{
-            drag.shoesIndex = indexPath.row
+            drag.shoesIndex = indexPath.row-1
             drag.shoes = item
         }
         drag.saveInUD()
