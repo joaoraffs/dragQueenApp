@@ -1,0 +1,150 @@
+2020-03-24 16:40:02 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7fc2a07eb9d0; archive(resolved)='<IDEArchive: 0x7fc29f9c0fd0>', distributionTask(resolved)='2', distributionDestination(resolved)='2', distributionMethod(resolved)='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc2bcbab020>', team(resolved)='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc2a03c83c0; teamID='9395QT9948', teamName='João Raffs Espolador', teamType='Individual', username='j.f.raffs@gmail.com', isFreeProvisioningTeam='0'>'>
+	Chain (13, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7fc2a07eb9d0; archive = '<IDEArchive: 0x7fc29f9c0fd0>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc2bcbab020>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc2a03c83c0; teamID='9395QT9948', teamName='João Raffs Espolador', teamType='Individual', username='j.f.raffs@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionProcessingPipelineContext: 0x7fc2a07eb7d0; archive = '<IDEArchive: 0x7fc29f9c0fd0>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc2bcbab020>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc2a03c83c0; teamID='9395QT9948', teamName='João Raffs Espolador', teamType='Individual', username='j.f.raffs@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc2a07e3760; archive = '<IDEArchive: 0x7fc29f9c0fd0>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc2bcbab020>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc2a03c83c0; teamID='9395QT9948', teamName='João Raffs Espolador', teamType='Individual', username='j.f.raffs@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc2b7989330; archive = '<IDEArchive: 0x7fc29f9c0fd0>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc2bcbab020>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc2a03c83c0; teamID='9395QT9948', teamName='João Raffs Espolador', teamType='Individual', username='j.f.raffs@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc2b53ce8e0; archive = '<IDEArchive: 0x7fc29f9c0fd0>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc2bcbab020>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc2a03c83c0; teamID='9395QT9948', teamName='João Raffs Espolador', teamType='Individual', username='j.f.raffs@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc2a07c0c00; archive = '<IDEArchive: 0x7fc29f9c0fd0>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc2bcbab020>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc2a03c83c0; teamID='9395QT9948', teamName='João Raffs Espolador', teamType='Individual', username='j.f.raffs@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc2beaa3b60; archive = '<IDEArchive: 0x7fc29f9c0fd0>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc2bcbab020>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc2a03c83c0; teamID='9395QT9948', teamName='João Raffs Espolador', teamType='Individual', username='j.f.raffs@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc2b53d88d0; archive = '<IDEArchive: 0x7fc29f9c0fd0>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc2bcbab020>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc2a03c83c0; teamID='9395QT9948', teamName='João Raffs Espolador', teamType='Individual', username='j.f.raffs@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc2bea5e9b0; archive = '<IDEArchive: 0x7fc29f9c0fd0>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc2bcbab020>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc2a03c83c0; teamID='9395QT9948', teamName='João Raffs Espolador', teamType='Individual', username='j.f.raffs@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc2bead8960; archive = '<IDEArchive: 0x7fc29f9c0fd0>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc2bcbab020>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fc2a03c83c0; teamID='9395QT9948', teamName='João Raffs Espolador', teamType='Individual', username='j.f.raffs@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fc2b5770680; archive = '<IDEArchive: 0x7fc29f9c0fd0>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc2bcbab020>', team='(null)'>
+	<IDEDistributionContext: 0x7fc2a07c7510; archive = '<IDEArchive: 0x7fc29f9c0fd0>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fc2bcbab020>', team='(null)'>
+	<IDEDistributionContext: 0x7fc29f054360; archive = '<IDEArchive: 0x7fc29f9c0fd0>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7fc2a07eb9d0>
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionCreateDestRootStep
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionCopyItemStep
+2020-03-24 16:40:02 +0000  Running /usr/bin/ditto '-V' '/Users/joaoraffs/Library/Developer/Xcode/Archives/2020-03-24/polydah 24-03-20 13.39.xcarchive/Products/Applications/polydah.app' '/var/folders/c9/hm2flpl923ldxbr2dntm94qc0000gn/T/XcodeDistPipeline.~~~YIBKES/Root/Payload/polydah.app'
+2020-03-24 16:40:02 +0000  >>> Copying /Users/joaoraffs/Library/Developer/Xcode/Archives/2020-03-24/polydah 24-03-20 13.39.xcarchive/Products/Applications/polydah.app 
+2020-03-24 16:40:02 +0000  copying file ./_CodeSignature/CodeResources ... 
+2020-03-24 16:40:02 +0000  4707 bytes for ./_CodeSignature/CodeResources
+2020-03-24 16:40:02 +0000  copying file ./polydah ... 
+2020-03-24 16:40:02 +0000  629680 bytes for ./polydah
+2020-03-24 16:40:02 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+2020-03-24 16:40:02 +0000  1650 bytes for ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+2020-03-24 16:40:02 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-PrM-nj-NYC.nib ... 
+2020-03-24 16:40:02 +0000  1061 bytes for ./Base.lproj/Main.storyboardc/UIViewController-PrM-nj-NYC.nib
+copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2020-03-24 16:40:02 +0000  8947 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+2020-03-24 16:40:02 +0000  copying file ./Base.lproj/Main.storyboardc/PrM-nj-NYC-view-yaQ-KH-fOy.nib ... 
+2020-03-24 16:40:02 +0000  42718 bytes for ./Base.lproj/Main.storyboardc/PrM-nj-NYC-view-yaQ-KH-fOy.nib
+copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+2020-03-24 16:40:02 +0000  333 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+2020-03-24 16:40:02 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2020-03-24 16:40:02 +0000  1197 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2020-03-24 16:40:02 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2020-03-24 16:40:02 +0000  896 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2020-03-24 16:40:02 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2020-03-24 16:40:02 +0000  258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+2020-03-24 16:40:02 +0000  copying file ./Assets.car ... 
+2020-03-24 16:40:02 +0000  743952 bytes for ./Assets.car
+2020-03-24 16:40:02 +0000  copying file ./embedded.mobileprovision ... 
+2020-03-24 16:40:02 +0000  15633 bytes for ./embedded.mobileprovision
+2020-03-24 16:40:02 +0000  copying file ./Info.plist ... 
+2020-03-24 16:40:02 +0000  1397 bytes for ./Info.plist
+2020-03-24 16:40:02 +0000  copying file ./PkgInfo ... 
+2020-03-24 16:40:02 +0000  8 bytes for ./PkgInfo
+2020-03-24 16:40:02 +0000  /usr/bin/ditto exited with 0
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionEmbedProfileStep
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionItemRemovalStep
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2020-03-24 16:40:02 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2020-03-24 16:40:02 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2020-03-24 16:40:02 +0000  Running /usr/bin/ditto '-V' '/Users/joaoraffs/Library/Developer/Xcode/Archives/2020-03-24/polydah 24-03-20 13.39.xcarchive/BCSymbolMaps/ADDDC160-AC15-31D0-99FD-A7561DDCCA22.bcsymbolmap' '/var/folders/c9/hm2flpl923ldxbr2dntm94qc0000gn/T/XcodeDistPipeline.~~~YIBKES/Root/BCSymbolMaps/ADDDC160-AC15-31D0-99FD-A7561DDCCA22.bcsymbolmap'
+2020-03-24 16:40:02 +0000  >>> Copying /Users/joaoraffs/Library/Developer/Xcode/Archives/2020-03-24/polydah 24-03-20 13.39.xcarchive/BCSymbolMaps/ADDDC160-AC15-31D0-99FD-A7561DDCCA22.bcsymbolmap 
+2020-03-24 16:40:02 +0000  copying file ./ADDDC160-AC15-31D0-99FD-A7561DDCCA22.bcsymbolmap ... 
+2020-03-24 16:40:02 +0000  51750 bytes for ./ADDDC160-AC15-31D0-99FD-A7561DDCCA22.bcsymbolmap
+2020-03-24 16:40:02 +0000  /usr/bin/ditto exited with 0
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionSymbolsStep
+2020-03-24 16:40:02 +0000  Excluding symbols for polydah.app
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionCopyAppleProvidedContentStep
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionAppThinningStep
+2020-03-24 16:40:02 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionArchThinningStep
+2020-03-24 16:40:02 +0000  Running /var/folders/c9/hm2flpl923ldxbr2dntm94qc0000gn/T/AppTranslocation/3641B75D-3E85-4367-9A74-CE922B1E2CD8/d/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/c9/hm2flpl923ldxbr2dntm94qc0000gn/T/XcodeDistPipeline.~~~YIBKES/Root/Payload/polydah.app/polydah' '-verify_arch' 'arm64e'
+2020-03-24 16:40:02 +0000  /var/folders/c9/hm2flpl923ldxbr2dntm94qc0000gn/T/AppTranslocation/3641B75D-3E85-4367-9A74-CE922B1E2CD8/d/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2020-03-24 16:40:02 +0000  Skipping architecture thinning for item "polydah" because arch "arm64e" wasn't found
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionODRStep
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionStripXattrsStep
+2020-03-24 16:40:02 +0000  Running /usr/bin/xattr '-crs' '/var/folders/c9/hm2flpl923ldxbr2dntm94qc0000gn/T/XcodeDistPipeline.~~~YIBKES/Root/Payload/polydah.app'
+2020-03-24 16:40:02 +0000  /usr/bin/xattr exited with 0
+2020-03-24 16:40:02 +0000  Processing step: IDEDistributionCodesignStep
+2020-03-24 16:40:02 +0000  Entitlements for <IDEDistributionItem: 0x7fc2a07e2870; bundleID='qq.polydah', path='<DVTFilePath:0x7fc29efdf9e0:'/Users/joaoraffs/Library/Developer/Xcode/Archives/2020-03-24/polydah 24-03-20 13.39.xcarchive/Products/Applications/polydah.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc2b7f89080; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc2a07e2ea0; name='Apple Development: João Raffs Espolador (Y53MCP3AKW)', hash='4DD417D804EF7B3F551BA0F865AA0066379B3D20', serialNumber='2DF3257154211DD2', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-19 18:34:26 +0000''>', entitlements='{
+    "application-identifier" = "9395QT9948.qq.polydah";
+    "com.apple.developer.team-identifier" = 9395QT9948;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "9395QT9948.qq.polydah"
+    );
+}', teamID='9395QT9948', identifier='qq.polydah', executablePath='<DVTFilePath:0x7fc2a07bc4f0:'/Users/joaoraffs/Library/Developer/Xcode/Archives/2020-03-24/polydah 24-03-20 13.39.xcarchive/Products/Applications/polydah.app/polydah'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "9395QT9948.qq.polydah";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = 9395QT9948;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "9395QT9948.qq.polydah"
+    );
+}
+2020-03-24 16:40:02 +0000  Writing entitlements for <IDEDistributionItem: 0x7fc2a07e2870; bundleID='qq.polydah', path='<DVTFilePath:0x7fc29efdf9e0:'/Users/joaoraffs/Library/Developer/Xcode/Archives/2020-03-24/polydah 24-03-20 13.39.xcarchive/Products/Applications/polydah.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fc2b7f89080; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fc2a075a920; name='Apple Development: João Raffs Espolador (Y53MCP3AKW)', hash='4DD417D804EF7B3F551BA0F865AA0066379B3D20', serialNumber='2DF3257154211DD2', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-10-19 18:34:26 +0000''>', entitlements='{
+    "application-identifier" = "9395QT9948.qq.polydah";
+    "com.apple.developer.team-identifier" = 9395QT9948;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "9395QT9948.qq.polydah"
+    );
+}', teamID='9395QT9948', identifier='qq.polydah', executablePath='<DVTFilePath:0x7fc2a07bc4f0:'/Users/joaoraffs/Library/Developer/Xcode/Archives/2020-03-24/polydah 24-03-20 13.39.xcarchive/Products/Applications/polydah.app/polydah'>', hardenedRuntime='0'>'> to: /var/folders/c9/hm2flpl923ldxbr2dntm94qc0000gn/T/XcodeDistPipeline.~~~YIBKES/entitlements~~~3R1TmF
+2020-03-24 16:40:02 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '383538C15C82253EEED1DB670DD7B4F9AB03BAAA' '--entitlements' '/var/folders/c9/hm2flpl923ldxbr2dntm94qc0000gn/T/XcodeDistPipeline.~~~YIBKES/entitlements~~~3R1TmF' '--preserve-metadata=identifier,flags,runtime' '/var/folders/c9/hm2flpl923ldxbr2dntm94qc0000gn/T/XcodeDistPipeline.~~~YIBKES/Root/Payload/polydah.app'
+2020-03-24 16:40:03 +0000  /var/folders/c9/hm2flpl923ldxbr2dntm94qc0000gn/T/XcodeDistPipeline.~~~YIBKES/Root/Payload/polydah.app: signed app bundle with Mach-O thin (arm64) [qq.polydah]
+2020-03-24 16:40:03 +0000  /usr/bin/codesign exited with 0
+2020-03-24 16:40:03 +0000  Processing step: IDEDistributionZipODRItemStep
+2020-03-24 16:40:03 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-03-24 16:40:03 +0000  Processing step: IDEDistributionCreateIPAStep
+2020-03-24 16:40:03 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/c9/hm2flpl923ldxbr2dntm94qc0000gn/T/XcodeDistPipeline.~~~YIBKES/Root' '/var/folders/c9/hm2flpl923ldxbr2dntm94qc0000gn/T/XcodeDistPipeline.~~~YIBKES/Packages/polydah.ipa'
+2020-03-24 16:40:03 +0000  >>> Copying /var/folders/c9/hm2flpl923ldxbr2dntm94qc0000gn/T/XcodeDistPipeline.~~~YIBKES/Root 
+2020-03-24 16:40:03 +0000  copying file ./BCSymbolMaps/ADDDC160-AC15-31D0-99FD-A7561DDCCA22.bcsymbolmap ... 
+2020-03-24 16:40:03 +0000  51750 bytes for ./BCSymbolMaps/ADDDC160-AC15-31D0-99FD-A7561DDCCA22.bcsymbolmap
+2020-03-24 16:40:03 +0000  copying file ./Payload/polydah.app/_CodeSignature/CodeResources ... 
+2020-03-24 16:40:03 +0000  4707 bytes for ./Payload/polydah.app/_CodeSignature/CodeResources
+2020-03-24 16:40:03 +0000  copying file ./Payload/polydah.app/polydah ... 
+2020-03-24 16:40:03 +0000  506208 bytes for ./Payload/polydah.app/polydah
+2020-03-24 16:40:03 +0000  copying file ./Payload/polydah.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+2020-03-24 16:40:03 +0000  1650 bytes for ./Payload/polydah.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+copying file ./Payload/polydah.app/Base.lproj/Main.storyboardc/UIViewController-PrM-nj-NYC.nib ... 
+2020-03-24 16:40:03 +0000  1061 bytes for ./Payload/polydah.app/Base.lproj/Main.storyboardc/UIViewController-PrM-nj-NYC.nib
+copying file ./Payload/polydah.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2020-03-24 16:40:03 +0000  8947 bytes for ./Payload/polydah.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+copying file ./Payload/polydah.app/Base.lproj/Main.storyboardc/PrM-nj-NYC-view-yaQ-KH-fOy.nib ... 
+2020-03-24 16:40:03 +0000  42718 bytes for ./Payload/polydah.app/Base.lproj/Main.storyboardc/PrM-nj-NYC-view-yaQ-KH-fOy.nib
+copying file ./Payload/polydah.app/Base.lproj/Main.storyboardc/Info.plist ... 
+2020-03-24 16:40:03 +0000  333 bytes for ./Payload/polydah.app/Base.lproj/Main.storyboardc/Info.plist
+copying file ./Payload/polydah.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2020-03-24 16:40:03 +0000  1197 bytes for ./Payload/polydah.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2020-03-24 16:40:03 +0000  copying file ./Payload/polydah.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2020-03-24 16:40:03 +0000  896 bytes for ./Payload/polydah.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2020-03-24 16:40:03 +0000  copying file ./Payload/polydah.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2020-03-24 16:40:03 +0000  258 bytes for ./Payload/polydah.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+copying file ./Payload/polydah.app/Assets.car ... 
+2020-03-24 16:40:03 +0000  743952 bytes for ./Payload/polydah.app/Assets.car
+copying file ./Payload/polydah.app/embedded.mobileprovision ... 
+2020-03-24 16:40:03 +0000  11270 bytes for ./Payload/polydah.app/embedded.mobileprovision
+copying file ./Payload/polydah.app/Info.plist ... 
+2020-03-24 16:40:03 +0000  1397 bytes for ./Payload/polydah.app/Info.plist
+copying file ./Payload/polydah.app/PkgInfo ... 
+8 bytes for ./Payload/polydah.app/PkgInfo
+2020-03-24 16:40:03 +0000  /usr/bin/ditto exited with 0
+2020-03-24 16:40:03 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2020-03-24 16:40:03 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2020-03-24 16:40:03 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2020-03-24 16:40:03 +0000  Processing step: IDEDistributionCreateManifestStep
+2020-03-24 16:40:03 +0000  Skipping step: IDEDistributionCreateManifestStep because it said so

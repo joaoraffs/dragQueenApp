@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Runway" translatesAutoresizingMaskIntoConstraints="NO" id="KGn-DF-16k">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dX0-R8-umw" userLabel="drag's area">
                                 <rect key="frame" x="0.0" y="163" width="414" height="583"/>
                                 <subviews>
@@ -69,54 +72,58 @@
                                     <outletCollection property="gestureRecognizers" destination="hzk-gy-lo8" appends="YES" id="tDQ-xA-oxx"/>
                                 </connections>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPI-Kr-yVP">
-                                <rect key="frame" x="105" y="53" width="169" height="41"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="Fll-lv-fa2">
+                                <rect key="frame" x="88" y="54" width="216" height="86"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="169" id="cgO-a1-mZB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.95686274509803915" green="0.72549019607843135" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="023-coins" translatesAutoresizingMaskIntoConstraints="NO" id="GwF-wm-hib" userLabel="cifraoImageView">
-                                <rect key="frame" x="41" y="33" width="56" height="61"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="N3B-Lp-kDh"/>
-                                    <constraint firstAttribute="height" constant="61" id="rLc-6c-QZV"/>
+                                    <constraint firstAttribute="width" constant="216" id="BP0-Fv-Opb"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="038-diamond" translatesAutoresizingMaskIntoConstraints="NO" id="EQn-M1-d47" userLabel="cifraoImageView">
-                                <rect key="frame" x="52" y="110" width="34" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPI-Kr-yVP">
+                                <rect key="frame" x="157" y="71" width="88" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="cgO-a1-mZB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.932646215" green="0.18202480670000001" blue="0.7922005057" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Money Icon" translatesAutoresizingMaskIntoConstraints="NO" id="GwF-wm-hib" userLabel="cifraoImageView">
+                                <rect key="frame" x="41" y="54" width="86" height="86"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="34" id="Hhd-Ak-5kh"/>
-                                    <constraint firstAttribute="height" constant="37" id="lQN-x7-src"/>
+                                    <constraint firstAttribute="width" constant="86" id="N3B-Lp-kDh"/>
+                                    <constraint firstAttribute="height" constant="86" id="rLc-6c-QZV"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0g6-du-0Zb">
-                                <rect key="frame" x="94" y="118" width="115" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="little money icon" translatesAutoresizingMaskIntoConstraints="NO" id="k8I-Gv-p5P">
+                                <rect key="frame" x="139" y="71" width="18" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="115" id="lxr-jd-TMv"/>
+                                    <constraint firstAttribute="width" constant="18" id="eiW-Xr-Rdd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.062745098039215685" green="0.46654158829999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 / sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVq-rW-dtE">
+                                <rect key="frame" x="181" y="107" width="50" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="YfX-Jg-0Qa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.932646215" green="0.18202480670000001" blue="0.7922005057" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="per sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXp-Da-Ou6">
-                                <rect key="frame" x="179" y="63" width="57" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="little money icon" translatesAutoresizingMaskIntoConstraints="NO" id="zfF-Uc-sEv">
+                                <rect key="frame" x="145" y="109" width="36" height="10"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="57" id="9nc-AV-haC"/>
+                                    <constraint firstAttribute="height" constant="10" id="RdU-I9-OsV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.95686274510000002" green="0.72549019609999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ko5-Vq-ygw">
-                                <rect key="frame" x="302" y="79" width="77" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="LOJA" image="card">
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ko5-Vq-ygw">
+                                <rect key="frame" x="309" y="129" width="85" height="59"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="5Ie-Af-a0z"/>
+                                    <constraint firstAttribute="height" constant="59" id="O0i-rP-8Ij"/>
+                                </constraints>
+                                <state key="normal" image="credit card">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -126,21 +133,31 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ko5-Vq-ygw" secondAttribute="trailing" constant="20" id="2NF-1W-Rw3"/>
                             <constraint firstItem="dX0-R8-umw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3oY-9o-uht"/>
-                            <constraint firstItem="EQn-M1-d47" firstAttribute="top" secondItem="GwF-wm-hib" secondAttribute="bottom" constant="16" id="7Bg-h6-IZZ"/>
-                            <constraint firstItem="gPI-Kr-yVP" firstAttribute="leading" secondItem="GwF-wm-hib" secondAttribute="trailing" constant="8" id="9bw-56-AAk"/>
+                            <constraint firstItem="gPI-Kr-yVP" firstAttribute="leading" secondItem="GwF-wm-hib" secondAttribute="trailing" constant="30" id="9bw-56-AAk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dX0-R8-umw" secondAttribute="bottom" constant="116" id="Cxz-e3-pQo"/>
+                            <constraint firstItem="MVq-rW-dtE" firstAttribute="leading" secondItem="zfF-Uc-sEv" secondAttribute="trailing" id="JAA-GD-wAU"/>
+                            <constraint firstItem="Fll-lv-fa2" firstAttribute="leading" secondItem="GwF-wm-hib" secondAttribute="trailing" constant="-39" id="JIS-yE-YmT"/>
+                            <constraint firstItem="Fll-lv-fa2" firstAttribute="top" secondItem="GwF-wm-hib" secondAttribute="top" id="KmD-KC-8Jw"/>
                             <constraint firstItem="dX0-R8-umw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="119" id="MAY-qn-mra"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="GwF-wm-hib" secondAttribute="top" constant="11" id="Q69-fn-FcU"/>
-                            <constraint firstItem="gPI-Kr-yVP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0457589" id="UAB-Ro-guM"/>
-                            <constraint firstItem="gPI-Kr-yVP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="Vce-Xc-2yM"/>
-                            <constraint firstItem="0g6-du-0Zb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="VyX-GI-sxN"/>
-                            <constraint firstItem="EQn-M1-d47" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="W9Z-pa-wo1"/>
-                            <constraint firstItem="DXp-Da-Ou6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="gQy-wA-zwc"/>
+                            <constraint firstItem="KGn-DF-16k" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ocw-eh-61W"/>
+                            <constraint firstItem="k8I-Gv-p5P" firstAttribute="bottom" secondItem="gPI-Kr-yVP" secondAttribute="bottom" id="OnG-Nf-MSA"/>
+                            <constraint firstItem="MVq-rW-dtE" firstAttribute="top" secondItem="gPI-Kr-yVP" secondAttribute="bottom" id="PfX-LB-70q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="GwF-wm-hib" secondAttribute="top" constant="-10" id="Q69-fn-FcU"/>
+                            <constraint firstItem="KGn-DF-16k" firstAttribute="top" secondItem="ko5-Vq-ygw" secondAttribute="bottom" constant="-144" id="UYZ-XN-H5p"/>
+                            <constraint firstItem="gPI-Kr-yVP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="Vce-Xc-2yM"/>
+                            <constraint firstItem="zfF-Uc-sEv" firstAttribute="top" secondItem="gPI-Kr-yVP" secondAttribute="bottom" constant="2" id="aDk-pq-Lyx"/>
+                            <constraint firstItem="KGn-DF-16k" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="c52-Yy-NbZ"/>
+                            <constraint firstItem="k8I-Gv-p5P" firstAttribute="top" secondItem="gPI-Kr-yVP" secondAttribute="top" id="hZV-Bh-HfK"/>
                             <constraint firstItem="GwF-wm-hib" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="jGC-41-OEB"/>
-                            <constraint firstItem="DXp-Da-Ou6" firstAttribute="leading" secondItem="gPI-Kr-yVP" secondAttribute="trailing" constant="-95" id="lh9-OM-LTz"/>
-                            <constraint firstItem="0g6-du-0Zb" firstAttribute="leading" secondItem="EQn-M1-d47" secondAttribute="trailing" constant="8" id="ubW-0y-JOg"/>
+                            <constraint firstItem="KGn-DF-16k" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="koH-HT-CUR"/>
+                            <constraint firstItem="KGn-DF-16k" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="sWL-dY-j1i"/>
+                            <constraint firstItem="zfF-Uc-sEv" firstAttribute="height" secondItem="MVq-rW-dtE" secondAttribute="height" constant="-4" id="tRA-Ub-pia"/>
+                            <constraint firstItem="Fll-lv-fa2" firstAttribute="height" secondItem="GwF-wm-hib" secondAttribute="height" id="ucp-cf-iHp"/>
                             <constraint firstItem="dX0-R8-umw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vlh-4J-V3L"/>
+                            <constraint firstItem="MVq-rW-dtE" firstAttribute="centerX" secondItem="gPI-Kr-yVP" secondAttribute="centerX" constant="5" id="x8O-nS-kuZ"/>
+                            <constraint firstItem="gPI-Kr-yVP" firstAttribute="leading" secondItem="k8I-Gv-p5P" secondAttribute="trailing" id="zmc-TE-oKX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -150,6 +167,7 @@
                         <outlet property="dressImageView" destination="hxM-0i-cHn" id="H9V-b4-vCL"/>
                         <outlet property="hairImageView" destination="8QJ-CA-j7g" id="EOU-6w-ytN"/>
                         <outlet property="hairImageViw" destination="8QJ-CA-j7g" id="28R-nz-sfm"/>
+                        <outlet property="perSecLabel" destination="MVq-rW-dtE" id="Sy1-6J-wbB"/>
                         <outlet property="shoeImageView" destination="oHm-TT-4yW" id="vCI-AY-Ccq"/>
                     </connections>
                 </viewController>
@@ -763,10 +781,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="023-coins" width="512" height="512"/>
-        <image name="038-diamond" width="512" height="512"/>
         <image name="Basi Polly" width="615" height="1478"/>
-        <image name="card" width="512" height="362"/>
+        <image name="Money Icon" width="110" height="110"/>
+        <image name="Runway" width="414" height="779"/>
+        <image name="credit card" width="85" height="69"/>
+        <image name="little money icon" width="18" height="18"/>
+        <image name="money rectangle" width="240" height="66"/>
         <image name="shoe1" width="909" height="1478"/>
     </resources>
 </document>

@@ -12,11 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+
         repeater()
         
-                
     }
     
     @IBOutlet weak var hairImageView: UIImageView!
@@ -27,10 +25,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var dressImageView: UIImageView!
     @IBOutlet weak var hairImageViw: UIImageView!
     @IBOutlet weak var shoeImageView: UIImageView!
+    
     @IBAction func tapGesture(_ sender: Any) {
         self.currency.increasesMoneyBy(currency.moneyByTap)
         self.reloadLabels()
+        
     }
+    
     public func repeater(){
         let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             self.reloadLabels()
@@ -38,14 +39,21 @@ class ViewController: UIViewController {
           print("money increased")
         }
     }
+    
     private func reloadLabels(){
         self.currencyLabel.text = String(Model.instance.currency.avaiableMoney)
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         reloadEverything()
     }
     
+    @IBOutlet weak var perSecLabel: UILabel!
+    
     func reloadEverything(){
+        
+        perSecLabel.text = "\( currency.moneyPerSecond) / sec"
+        
         let drag = Model.instance.drag
         self.hairImageView.image = drag.hair.image
         self.dressImageView.image = drag.dress.image

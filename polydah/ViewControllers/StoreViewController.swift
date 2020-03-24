@@ -98,12 +98,7 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         drag.saveInUD()
         drag.fetchFromUD()
-        
-        
     }
-
-    
-
     @IBOutlet weak var allTypeOfItemsTableView: UITableView!
     
     override func viewDidLoad() {

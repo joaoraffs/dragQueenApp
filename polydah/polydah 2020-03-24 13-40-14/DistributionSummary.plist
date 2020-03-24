@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>polydah.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>bitcode</key>
+			<true/>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>383538C15C82253EEED1DB670DD7B4F9AB03BAAA</string>
+				<key>dateExpires</key>
+				<string>24/03/21</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>9395QT9948.qq.polydah</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>9395QT9948</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>9395QT9948.qq.polydah</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>polydah.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>dfd4c949-4513-4a27-bf25-53a0809b1ed3</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: qq.polydah</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>9395QT9948</string>
+				<key>name</key>
+				<string>João Raffs Espolador</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
