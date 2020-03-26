@@ -39,7 +39,7 @@ public class Drag{
     public var shoesIndex: Int = 0
     
     public func fetchFromUD(){
-        if let hairIndex = UserDefaults.standard.object(forKey: "dragIndex") as? Int{
+        if let hairIndex = UserDefaults.standard.object(forKey: "hairIndex") as? Int{
             self.hairIndex = hairIndex
             self.hair = Model.instance.itemModel.hairsInStore[hairIndex]
         }
@@ -54,7 +54,7 @@ public class Drag{
     }
    
     public func saveInUD(){
-        UserDefaults.standard.set(Model.instance.drag.hairIndex, forKey: "dragHair")
+        UserDefaults.standard.set(Model.instance.drag.hairIndex, forKey: "hairIndex")
         UserDefaults.standard.set(Model.instance.drag.shoesIndex, forKey: "shoesIndex")
         UserDefaults.standard.set(Model.instance.drag.dressIndex, forKey: "dressIndex")
     }

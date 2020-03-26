@@ -10,6 +10,8 @@ import UIKit
 
 class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var currency = Model.instance.currency
+    
     var alredyLoadedSectionOne = false
     var alredyLoadedSectionTwo = false
     
@@ -75,6 +77,8 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
     
+    @IBOutlet weak var avaiableMoneyLabel: UILabel!
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = itensInShop[indexPath.section]![indexPath.row-1]
         let currency = Model.instance.currency
@@ -99,10 +103,17 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         drag.saveInUD()
         drag.fetchFromUD()
     }
+    
     @IBOutlet weak var allTypeOfItemsTableView: UITableView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+       
+        self.currency.eventManager.listenTo(eventName: "moneyIncreased") {
+           self.avaiableMoneyLabel.text = String(Model.instance.currency.avaiableMoney)
+        }
+        self.avaiableMoneyLabel.text = String(Model.instance.currency.avaiableMoney)
 
     }
 //    struct ContentView: View {

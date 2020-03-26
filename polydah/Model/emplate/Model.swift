@@ -9,6 +9,7 @@
 import Foundation
 
 class Model{
+    
     private init(){}
     
     public static var instance = Model.init()
@@ -18,4 +19,5 @@ class Model{
     public var currency = Currency()
     
     public var drag = Drag()
+    
 }

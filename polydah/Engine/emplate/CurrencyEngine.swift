@@ -10,16 +10,18 @@ import Foundation
 import UIKit
 
 class CurrencyEngine{
-    
+//    public eventListener
     public init(){}
     
     var currency = Model.instance.currency
     
     public func start(){
       let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+       
         self.currency.increasesMoneyBy(self.currency.moneyPerSecond)
         
         print("money increased")
+        
         
         }
     }

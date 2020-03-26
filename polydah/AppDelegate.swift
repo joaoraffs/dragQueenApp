@@ -18,12 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let currency = Currency()
         
-        currency.avaiableMoney = 0
-        currency.moneyPerSecond = 1 /* é nessa hora que é definido  */
+         /* é nessa hora que é definido  */
+        currency.getDataFromUD()
+            
+        let drag = Drag()
+        drag.fetchFromUD()
         
-        UserDefaults.standard.set(Model.instance.drag.hairIndex, forKey: "dragHair")
-        UserDefaults.standard.set(Model.instance.drag.shoesIndex, forKey: "shoesIndex")
-        UserDefaults.standard.set(Model.instance.drag.dressIndex, forKey: "dressIndex")
+        Model.instance.drag = drag
+//        UserDefaults.standard.set(Model.instance.drag.hairIndex, forKey: "dragHair")
+//        UserDefaults.standard.set(Model.instance.drag.shoesIndex, forKey: "shoesIndex")
+//        UserDefaults.standard.set(Model.instance.drag.dressIndex, forKey: "dressIndex")
 
         
         Model.instance.currency = currency
@@ -48,7 +52,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
 
 }
 
