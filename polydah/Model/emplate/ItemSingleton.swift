@@ -26,7 +26,8 @@ class ItemSingleton{
             print("entrou no primeeiro rpeat \(repeater)")
             if let image = UIImage.init(named: "dress\(repeater)"){
                 print("entrou no if let")
-                let item = Item(image: image, name: "dress\(repeater)", description: "", price: 30)
+                let info = ItemData().dresses[repeater]
+                let item = Item(image: image, name: info.name, description: info.description, price: info.price, increase: info.increase)
                 self.dressesInStore.append(item)
             }else{
                 break
@@ -37,8 +38,9 @@ class ItemSingleton{
         while true{
             print("entrou no segundo repeat")
             if let image = UIImage.init(named: "hair\(repeater)"){
+                let info = ItemData().hairs[repeater]
                 print("entrou no if let do hair")
-                let item = Item(image: image, name: "hair\(repeater)", description: "", price: 30)
+                let item = Item(image: image, name: info.name, description: info.description, price: info.price,increase: info.increase)
                 self.hairsInStore.append(item)
             }else{
                 break
@@ -49,8 +51,10 @@ class ItemSingleton{
         while true{
             print("entrou no 3o repeat")
             if let image = UIImage.init(named: "shoe\(repeater)"){
+                let info = ItemData().shoes[repeater]
                 print("entrou no if let do hair")
-                let item = Item(image: image, name: "shoe\(repeater)", description: "", price: 30)
+                
+                let item = Item(image: image, name: info.name, description: info.description, price: info.price, increase: info.increase)
                 self.shoesInStore.append(item)
             }else{
                 break

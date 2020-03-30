@@ -20,7 +20,7 @@ public class Drag{
     
     
     public init(){
-        let mockItem = Item(image: UIImage.init(named: "dress0")!, name: "aaa", description: "aaaa", price: 50)
+        let mockItem = Item(image: UIImage.init(named: "dress0")!, name: "aaa", description: "aaaa", price: 50, increase: 0)
         
         self.hair = mockItem
         self.dress = mockItem
