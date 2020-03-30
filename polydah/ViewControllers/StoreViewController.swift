@@ -82,26 +82,34 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = itensInShop[indexPath.section]![indexPath.row-1]
         let currency = Model.instance.currency
-        currency.moneyPerSecond += indexPath.row-1
-        currency.moneyByTap += indexPath.section
         
-        let drag = Model.instance.drag
-        let section = indexPath.section
-        
-        if section == 0{
-            drag.hairIndex = indexPath.row-1
-            drag.hair = item
+        if currency.avaiableMoney >= item.price{
+            let drag = Model.instance.drag
+            let section = indexPath.section
+            
+            currency.avaiableMoney -= item.price
+            if section == 0{
+                drag.hairIndex = indexPath.row-1
+                drag.hair = item
+                currency.moneyPerSecond += item.increase
+            }
+            if section == 1{
+                drag.dressIndex = indexPath.row-1
+                drag.dress = item
+                currency.moneyByTap *= item.increase
+            }
+            if section == 2{
+                drag.shoesIndex = indexPath.row-1
+                drag.shoes = item
+                currency.moneyByTap += item.increase
+            }
+            
+            drag.saveInUD()
+            drag.fetchFromUD()
+            
+            self.
         }
-        if section == 1{
-            drag.dressIndex = indexPath.row-1
-            drag.dress = item
-        }
-        if section == 2{
-            drag.shoesIndex = indexPath.row-1
-            drag.shoes = item
-        }
-        drag.saveInUD()
-        drag.fetchFromUD()
+
     }
     
     @IBOutlet weak var allTypeOfItemsTableView: UITableView!
