@@ -107,7 +107,6 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
             drag.saveInUD()
             drag.fetchFromUD()
             
-            self.
         }
 
     }
